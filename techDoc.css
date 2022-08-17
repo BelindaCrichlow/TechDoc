@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* CSS Document */
+/** {box-sizing: border-box}*/
+
+*{
+	padding:0;
+	margim:0;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	
+}
+
+.spacer{
+	width:100%;
+	height:1vh;
+	clear:both;
+}
+
+span{
+	background-color: #ffffff;
+	
+}
+hr {
+	border: groove rgba(214,208,208,0.30) 1px;
+	width: 100%;
+}
+section{
+	padding:0 3%;
+	border-bottom: solid #000000 2px;	
+	border-left: solid #000000 2px;
+}
+
+pre{
+	color:#2F00FF;
+	font-size: 1rem;
+}
+
+header{
+	font-size: 1.75rem;
+	font-weight: bolder;
+	text-align: left; 
+}
+
+a{
+    text-decoration-line: none;
+}
+a:hover{
+    color:red;
+}
+a{
+    text-decoration-line: none;
+}
+a:hover{
+    color:red;
+}
+
+a:active{
+    color:red;
+}
+section li{
+	margin-left:3%;
+}
+#navbar{
+  height: 100vh;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  border-top: solid  #ffffff 2px;
+  overflow-x: hidden;
+  text-align: left;
+}
+
+#navbar li{
+  text-decoration: none !important;
+  color: #5A5A5A;
+  display: block;
+  border-bottom: solid #000000 1px;
+
+}
+
+#navbar .nav-link{
+  color:#5A5A5A;
+	padding:5%;
+	font-size: 1.25rem;
+}
+#navbar .nav-link:active{
+  color:#FF043F;
+}
+
+#navbar .nav-link:hover {
+  color:#FF043F;
+}
+
+#navbar header{
+	border-bottom: solid #000000 1px;
+}
+#main-doc {
+  margin-left: 15%; /* Same as the width of the sidenav */
+  font-size: 1.25rem; /* Increased text to enable scrolling */
+ 
+}
+
+
+@media (max-width: 600px) {
+	#main-doc{
+		overflow-x: hidden;
+		margin-left: 25%; 
+		font-size: 1rem;	
+	}
+	
+#navbar{
+		font-size: 3rem;
+		width:25%;
+	}
+	
+#navbar header{
+	font-size: 1rem;
+	text-align: left; 
+}
+	
+#navbar .nav-link{
+  	color:#5A5A5A;
+	padding:5%;
+	font-size: 1rem;
+}
+}
+
+
+@media(max-width: 1200px){
+	
+	#navbar header{
+	font-size: 1.2rem;
+		
+	}
+#navbar .nav-link{
+  color:#5A5A5A;
+	padding:5%;
+	font-size: 1rem;
+}
+	
+}
